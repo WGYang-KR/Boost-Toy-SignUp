@@ -13,7 +13,8 @@
 		6ABCEDB627BF246200C33F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABCEDB427BF246200C33F7C /* Main.storyboard */; };
 		6ABCEDB827BF246600C33F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABCEDB727BF246600C33F7C /* Assets.xcassets */; };
 		6ABCEDBB27BF246600C33F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABCEDB927BF246600C33F7C /* LaunchScreen.storyboard */; };
-		6ABCEDC327BF2BEB00C33F7C /* SiginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCEDC227BF2BEB00C33F7C /* SiginUpViewController.swift */; };
+		6ABCEDC327BF2BEB00C33F7C /* SiginUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCEDC227BF2BEB00C33F7C /* SiginUpFirstViewController.swift */; };
+		6ABCEDC527BF3CEB00C33F7C /* SignUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCEDC427BF3CEB00C33F7C /* SignUpSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		6ABCEDB727BF246600C33F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ABCEDBA27BF246600C33F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ABCEDBC27BF246600C33F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ABCEDC227BF2BEB00C33F7C /* SiginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginUpViewController.swift; sourceTree = "<group>"; };
+		6ABCEDC227BF2BEB00C33F7C /* SiginUpFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginUpFirstViewController.swift; sourceTree = "<group>"; };
+		6ABCEDC427BF3CEB00C33F7C /* SignUpSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,8 @@
 				6ABCEDB027BF246200C33F7C /* SceneDelegate.swift */,
 				6ABCEDB227BF246200C33F7C /* ViewController.swift */,
 				6ABCEDB427BF246200C33F7C /* Main.storyboard */,
-				6ABCEDC227BF2BEB00C33F7C /* SiginUpViewController.swift */,
+				6ABCEDC227BF2BEB00C33F7C /* SiginUpFirstViewController.swift */,
+				6ABCEDC427BF3CEB00C33F7C /* SignUpSecondViewController.swift */,
 				6ABCEDB727BF246600C33F7C /* Assets.xcassets */,
 				6ABCEDB927BF246600C33F7C /* LaunchScreen.storyboard */,
 				6ABCEDBC27BF246600C33F7C /* Info.plist */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ABCEDC327BF2BEB00C33F7C /* SiginUpViewController.swift in Sources */,
+				6ABCEDC327BF2BEB00C33F7C /* SiginUpFirstViewController.swift in Sources */,
 				6ABCEDB327BF246200C33F7C /* ViewController.swift in Sources */,
 				6ABCEDAF27BF246200C33F7C /* AppDelegate.swift in Sources */,
 				6ABCEDB127BF246200C33F7C /* SceneDelegate.swift in Sources */,
+				6ABCEDC527BF3CEB00C33F7C /* SignUpSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
