@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zqC-gg-jGo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -79,8 +79,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-l1-PmG">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-Cf-TQM">
-                                                <rect key="frame" x="0.0" y="1" width="100" height="97.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" image="person.crop.circle.badge.plus.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-Cf-TQM">
+                                                <rect key="frame" x="-1.5" y="0.0" width="101.5" height="99.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="PcY-N5-taQ"/>
                                                     <constraint firstAttribute="height" constant="100" id="c62-im-Ukc"/>
@@ -120,12 +120,30 @@
                                     </textView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-ro-9pb">
+                                <rect key="frame" x="50" y="801" width="314" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F6-fk-6lt">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-pG-NB4">
+                                        <rect key="frame" x="265.5" y="0.0" width="48.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="다음"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cyM-Nb-pG1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cyM-Nb-pG1" firstAttribute="trailing" secondItem="zhQ-IP-XkF" secondAttribute="trailing" constant="30" id="9b9-LZ-0vI"/>
                             <constraint firstItem="zhQ-IP-XkF" firstAttribute="top" secondItem="cyM-Nb-pG1" secondAttribute="top" constant="50" id="9et-k2-Jvm"/>
+                            <constraint firstItem="cyM-Nb-pG1" firstAttribute="bottom" secondItem="M2c-ro-9pb" secondAttribute="bottom" constant="30" id="Mev-uV-yXh"/>
+                            <constraint firstItem="cyM-Nb-pG1" firstAttribute="trailing" secondItem="M2c-ro-9pb" secondAttribute="trailing" constant="50" id="NPb-6g-bzn"/>
+                            <constraint firstItem="M2c-ro-9pb" firstAttribute="leading" secondItem="cyM-Nb-pG1" secondAttribute="leading" constant="50" id="VJ1-Zr-sMd"/>
                             <constraint firstItem="zhQ-IP-XkF" firstAttribute="leading" secondItem="cyM-Nb-pG1" secondAttribute="leading" constant="30" id="gOu-IR-9eo"/>
                         </constraints>
                     </view>
@@ -134,9 +152,24 @@
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="37.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="LxD-jP-JaV">
+            <objects>
+                <viewController id="OoY-cb-0fR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ocx-0v-iYW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ghi-AR-Fid"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPR-7Z-g2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="38"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="person.crop.circle.badge.plus.fill" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
