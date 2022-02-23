@@ -101,12 +101,12 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thR-UP-Hzw">
                                                         <rect key="frame" x="0.0" y="36.5" width="234" height="27"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CHECK PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VpA-ib-ddt">
                                                         <rect key="frame" x="0.0" y="73.5" width="234" height="26.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -159,6 +159,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gN3-Jy-3Xj"/>
+                    <connections>
+                        <outlet property="nextButton" destination="nQG-pG-NB4" id="9nK-t1-TIv"/>
+                        <outlet property="textField_CheckPassword" destination="VpA-ib-ddt" id="yRF-MC-Rjn"/>
+                        <outlet property="textField_ID" destination="kQZ-JF-x6z" id="djk-za-OvW"/>
+                        <outlet property="textField_Password" destination="thR-UP-Hzw" id="kFY-lb-Ert"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5P6-RA-6UK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
