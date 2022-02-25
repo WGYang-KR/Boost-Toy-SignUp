@@ -30,7 +30,7 @@ class SiginUpFirstViewController: UIViewController,UITextFieldDelegate {
         print("텍스트 변경 감지")
         print("text :", sender.text)
         
-        //오류::::왜 1,2번째 조건 체크가 안될까.
+        //3개 텍스트필드가 채워졌는지, 비밀번호가 일치하는 지 확인.
         if !(self.textField_ID.text?.isEmpty ?? true)
             && !(self.textField_Password.text?.isEmpty ?? true)
             && isSameBothTextField(textField_Password, textField_CheckPassword) {
@@ -45,19 +45,32 @@ class SiginUpFirstViewController: UIViewController,UITextFieldDelegate {
     
     //'다음' 버튼 활성화/비활성화
     func updateNextButton(willActive: Bool) {
-        
+
+
         if(willActive == true) {
             //다음 버튼 색 변경
             self.nextButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
             //다음 페이지 연결
             print("다음 버튼 활성화")
+            self.nextButton.addTarget(self, action: #selector(pushToNext(_:)), for: UIControl.Event.touchUpInside)
+            
             
         } else {
             //다음 버튼 색 변경
             self.nextButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
             //다음 페이지 연결 해제
             print("다음 버튼 비활성화")
+            self.nextButton.removeTarget(self, action: #selector(pushToNext(_:)), for: .touchUpInside)
         }
+    }
+    
+    @objc func pushToNext(_ sender: Any?) {
+
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpSecondVC") else{print("다음 VC를 찾을 수 없음"); return}
+        
+            self.navigationController?.pushViewController(nextVC, animated: true)
+  
+        
     }
     
     //취소 버튼 클릭시

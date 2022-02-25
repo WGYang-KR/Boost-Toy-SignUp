@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1784.057971014493" y="37.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Second View Controller-->
         <scene sceneID="LxD-jP-JaV">
             <objects>
-                <viewController id="OoY-cb-0fR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpSecondVC" id="OoY-cb-0fR" customClass="SignUpSecondViewController" customModule="SignUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ocx-0v-iYW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +228,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="취소">
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="popToPrev" destination="OoY-cb-0fR" eventType="touchUpInside" id="hXb-uk-RIh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjD-rF-IjG">
                                         <rect key="frame" x="78.5" y="0.0" width="48.5" height="31"/>
