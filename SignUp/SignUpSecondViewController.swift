@@ -15,9 +15,14 @@ class SignUpSecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //'이전' 버튼 클릭 시.
+    //수정필요.(정보 유지 되도록)
     @IBAction func popToPrev() {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    //'취소' 버튼 클릭시.
+    
     
 
     /*

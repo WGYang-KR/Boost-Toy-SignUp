@@ -12,6 +12,8 @@ class SiginUpFirstViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var textField_ID: UITextField!
     @IBOutlet var textField_Password: UITextField!
     @IBOutlet var textField_CheckPassword: UITextField!
+    @IBOutlet var photoView: UIImageView!
+    @IBOutlet var cancelButton: UIButton!
     @IBOutlet var nextButton: UIButton!
     
     //두 텍스트필드 문자가 같은 지 확인.
@@ -90,6 +92,7 @@ class SiginUpFirstViewController: UIViewController,UITextFieldDelegate {
         self.textField_ID.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
         self.textField_Password.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
         self.textField_CheckPassword.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        
     }
     
    
