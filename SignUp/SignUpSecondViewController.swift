@@ -10,9 +10,9 @@ import UIKit
 class SignUpSecondViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate{
 
     @IBOutlet var phoneNumberField: UITextField!
-    @IBOutlet var birthdayPicker:UIDatePicker!
-    @IBOutlet var birthdayDisplay:UILabel!
-    @IBOutlet var joinButton:UIButton!
+    @IBOutlet var birthdayPicker: UIDatePicker!
+    @IBOutlet var birthdayDisplay: UILabel!
+    @IBOutlet var joinButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -96,16 +96,19 @@ class SignUpSecondViewController: UIViewController, UITextFieldDelegate, UINavig
 
 
         if(willActive == true) {
+    
             //다음 버튼 색 변경
             self.joinButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
             //다음 페이지 연결
             print("가입 버튼 활성화")
+            
             self.joinButton.addTarget(self, action: #selector(completeJoin(_:)), for: UIControl.Event.touchUpInside)
             
             
         } else {
             //다음 버튼 색 변경
             self.joinButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+            
             //다음 페이지 연결 해제
             print("가입 버튼 비활성화")
             self.joinButton.removeTarget(self, action: #selector(completeJoin(_:)), for: .touchUpInside)
